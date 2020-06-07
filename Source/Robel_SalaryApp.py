@@ -4,6 +4,10 @@
 """
 from sys import exit
 from time import sleep
+from os import system
+myTitle = 'Roar Salary Calculator 1.0'
+system('title '+myTitle)
+
 
 #Returns the Gross salary of a given inpute
 def GrossSalaryCalc(ReqInp):
