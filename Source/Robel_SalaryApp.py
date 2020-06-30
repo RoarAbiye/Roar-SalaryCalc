@@ -126,8 +126,8 @@ def mainMenu():
 
 	try:
 		print("\nSelect by typing the nubers for the menu:\n")
-		print("1. Calculate Gross Pay GIVEN NET PAY")
-		print("2. Calculate Net Pay GIVEN GROSS PAY")
+		print("1. Calculate Gross Pay - GIVEN NET PAY")
+		print("2. Calculate Net Pay   - GIVEN GROSS PAY")
 		print("3. Exit!")
 		inp = int(input(">>  "))
 	
