@@ -69,7 +69,7 @@ def Greet():
 	try:
 		gText = 'Salar Calulator 1.1'
 		for i in range(19):
-			print(gText[i], sep=" ", end=" ", flush=True);sleep(0.1)
+			print(gText[i], sep=" ", end=" ", flush=True);sleep(0.01)
 		print(" ")
 		line="*"*19
 		for x in range(19):
@@ -78,12 +78,12 @@ def Greet():
 	except (KeyboardInterrupt, SystemExit):
 		exit
 
-def NetPayfnc():
+def GrossPayfnc():
 	try:		
-		inp_np = (input("\nHow much do you want to pay or get paid? >>   "))
+		inp_np = (input("\nHow much do you want to pay or get paid?>>   "))
 		print ("\n")
 
-		GrossSalary	= GrossSalaryCalc(float(inp_np))
+		GrossSalary = GrossSalaryCalc(float(inp_np))
 			
 		if GrossSalary<=8800:
 			AllowanceNP = GrossSalary/4
@@ -99,7 +99,7 @@ def NetPayfnc():
 	except(KeyboardInterrupt, SystemExit):
 		exit
 
-def GrossPayfnc():
+def NetPayfnc():
 	try:
 		inp_gp = (input("\nHow much is the gross salary do you have? >>   "))
 		print ("\n")
