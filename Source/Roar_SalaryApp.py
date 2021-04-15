@@ -73,10 +73,8 @@ def Greet():
 		print(" ")
 		line="*"*19
 		for x in range(19):
-			print(line[x], sep=' ', end=' ', flush=True); sleep(0.02)
-		sleep(.5)
+			print(line[x], sep=' ', end=' ', flush=True); sleep(0.01)
 		print ("\nhint ... press [CTRL+C] to exit\n")
-		sleep(.5)
 	except (KeyboardInterrupt, SystemExit):
 		exit
 
@@ -137,9 +135,9 @@ def mainMenu():
 		exit
 	else:
 		if inp==1:
-			NetPayfnc()
-		elif inp==2:
 			GrossPayfnc()
+		elif inp==2:
+			NetPayfnc()
 		elif inp==3:
 			exit
 		else:
